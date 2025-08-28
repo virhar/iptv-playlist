@@ -1,8 +1,8 @@
-name: Update IPTV Playlist
+name: Build IPTV Playlist
 
 on:
   schedule:
-    - cron: "0 3 * * *"   # Tous les jours à 3h du matin
+    - cron: "0 3 * * *"   # Mise à jour tous les jours à 3h du matin
   workflow_dispatch:
 
 jobs:
@@ -26,12 +26,32 @@ jobs:
           curl -L https://iptv-org.github.io/iptv/categories/movies.m3u -o data/movies.m3u
           curl -L https://iptv-org.github.io/iptv/categories/news.m3u -o data/news.m3u
           curl -L https://iptv-org.github.io/iptv/categories/entertainment.m3u -o data/entertainment.m3u
-          cat data/*.m3u > playlist.m3u
+          # 👉 Tu peux rajouter d’autres liens ici si tu en trouves
+
+      - name: Merge, clean and fix playlist
+        run: |
+          echo "#EXTM3U" > playlist_fixed.m3u
+          grep -h -v '^#EXTM3U' data/*.m3u | awk '!seen[$0]++' > temp.m3u
+
+          COUNTER=1
+          while IFS= read -r line; do
+            if [[ "$line" == \#EXTINF* ]]; then
+              # Si pas de nom de chaîne, ajouter "Channel_x"
+              if [[ "$line" == *"," ]]; then
+                echo "${line}Channel_${COUNTER}" >> playlist_fixed.m3u
+              else
+                echo "$line" >> playlist_fixed.m3u
+              fi
+            else
+              echo "$line" >> playlist_fixed.m3u
+              ((COUNTER++))
+            fi
+          done < temp.m3u
 
       - name: Commit and push
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add playlist.m3u
-          git commit -m "Update playlist"
+          git add playlist_fixed.m3u
+          git commit -m "Auto update playlist"
           git push
