@@ -2,7 +2,7 @@ name: Build IPTV Playlist
 
 on:
   schedule:
-    - cron: "0 3 * * *"   # Tous les jours à 3h du matin
+    - cron: "0 3 * * *"
   workflow_dispatch:
 
 jobs:
@@ -27,14 +27,15 @@ jobs:
           curl -L https://iptv-org.github.io/iptv/categories/news.m3u -o data/news.m3u
           curl -L https://iptv-org.github.io/iptv/categories/entertainment.m3u -o data/entertainment.m3u
 
-      - name: Merge and clean with Python
+      - name: Merge and clean
         run: |
-          python3 scripts/clean.py data playlist_fixed.m3u
+          echo "#EXTM3U" > playlist_fixed.m3u
+          grep -h -v '^#EXTM3U' data/*.m3u | awk '!seen[$0]++' >> playlist_fixed.m3u
 
       - name: Commit and push
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add playlist_fixed.m3u
-          git commit -m "Auto update playlist"
+          git commit -m "Update playlist"
           git push
