@@ -1,6 +1,6 @@
-import os, sys, re
+import sys
 
-# Mapping simple ISO ou mots-clés -> pays
+# Mapping pays
 COUNTRY_MAP = {
     "fr": "FRANCE",
     "us": "USA",
@@ -16,7 +16,7 @@ COUNTRY_MAP = {
     "in": "INDIA",
 }
 
-# Catégories communes
+# Mapping catégories
 CATEGORY_MAP = {
     "sports": "SPORT",
     "sport": "SPORT",
@@ -32,20 +32,18 @@ CATEGORY_MAP = {
     "documentary": "DOC",
 }
 
-def detect_group(line):
-    l = line.lower()
+def detect_group(line, url):
+    text = (line + url).lower()
     country = "OTHER"
     category = "GENERAL"
 
-    # Détection pays
     for key, val in COUNTRY_MAP.items():
-        if f"{key}." in l or f"/{key}" in l or f"-{key}" in l:
+        if f"{key}." in text or f"/{key}" in text or f"-{key}" in text:
             country = val
             break
 
-    # Détection catégorie
     for key, val in CATEGORY_MAP.items():
-        if key in l:
+        if key in text:
             category = val
             break
 
@@ -66,8 +64,8 @@ def process(input_file, output_file):
             if not url.startswith("http"):
                 i += 1
                 continue
-            group = detect_group(line + url)
-            # Extraire nom existant ou générer
+            group = detect_group(line, url)
+            # Extraire nom
             name = "Channel_" + str(counter)
             if "," in line:
                 name = line.split(",",1)[1].strip() or name
