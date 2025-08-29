@@ -1,12 +1,12 @@
 name: Build IPTV Playlist
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: "0 */2 * * *"
+  workflow_dispatch:       # Lancer manuellement
+  schedule:                # Lancer automatiquement tous les jours à 3h
+    - cron: "0 3 * * *"
 
 permissions:
-  contents: write
+  contents: write          # Donne à GitHub Actions le droit de push
 
 jobs:
   build:
@@ -19,13 +19,26 @@ jobs:
         run: |
           mkdir -p data
           curl -L https://iptv-org.github.io/iptv/index.m3u -o data/global1.m3u
-          echo "#EXTM3U" > playlist_fixed.m3u
-          grep -h -v '^#EXTM3U' data/*.m3u | awk '!seen[$0]++' >> playlist_fixed.m3u
+          curl -L https://raw.githubusercontent.com/iptv-org/iptv/master/index.m3u -o data/global2.m3u
+          curl -L https://iptv-org.github.io/iptv/countries/fr.m3u -o data/fr.m3u
+          curl -L https://iptv-org.github.io/iptv/countries/us.m3u -o data/us.m3u
+          curl -L https://iptv-org.github.io/iptv/countries/gb.m3u -o data/gb.m3u
+          curl -L https://iptv-org.github.io/iptv/languages/fra.m3u -o data/langfr.m3u
+          curl -L https://iptv-org.github.io/iptv/languages/eng.m3u -o data/langeng.m3u
+          curl -L https://iptv-org.github.io/iptv/categories/sports.m3u -o data/sports.m3u
+          curl -L https://iptv-org.github.io/iptv/categories/movies.m3u -o data/movies.m3u
+          curl -L https://iptv-org.github.io/iptv/categories/news.m3u -o data/news.m3u
+          curl -L https://iptv-org.github.io/iptv/categories/entertainment.m3u -o data/entertainment.m3u
+
+      - name: Run clean script
+        run: |
+          pip install requests
+          python3 scripts/clean.py data playlist_fixed.m3u
 
       - name: Commit and push
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add playlist_fixed.m3u || true
-          git commit -m "Update playlist" || true
+          git add playlist_fixed.m3u
+          git commit -m "Update playlist" || echo "No changes to commit"
           git push
