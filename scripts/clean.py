@@ -1,6 +1,7 @@
 import os, sys, requests, re
 from urllib.parse import urlparse
 
+# Table ISO2 -> Pays lisibles
 COUNTRY_MAP = {
     "FR": "FRANCE",
     "CN": "CHINA",
@@ -30,20 +31,21 @@ def guess_name_from_url(url):
     base = hostname.split(".")[0].upper()
     return base if base else "Channel"
 
-def enrich(url, db, counter):
+def enrich(line, url, db, counter):
     chan = next((c for c in db if "url" in c and url in c["url"]), None)
     if chan:
         iso = chan.get("country", "")
         country = COUNTRY_MAP.get(iso, iso if iso else "OTHER")
         name = chan.get("name", f"Channel_{counter}")
-        tvg_id = chan.get("id", "")
         logo = chan.get("logo", "")
-        return f'#EXTINF:-1 tvg-id="{tvg_id}" group-title="{country}",{country}_{name}\n'
+        categories = chan.get("categories", [])
+        cat = categories[0].upper() if categories else "GENERAL"
+        return f'#EXTINF:-1 group-title="{country}-{cat}",{country}-{cat}_{name}\n'
     else:
-        # fallback: donner un nom basé sur le domaine
+        # fallback si non trouvé
         country = "OTHER"
         guess = guess_name_from_url(url)
-        return f'#EXTINF:-1 group-title="{country}",{country}_{guess}_{counter}\n'
+        return f'#EXTINF:-1 group-title="{country}-GENERAL",{country}-GENERAL_{guess}_{counter}\n'
 
 def process(input_dir, output_file):
     db = load_channels_db()
@@ -57,16 +59,13 @@ def process(input_dir, output_file):
             for i, line in enumerate(lines):
                 if line.startswith("#EXTINF"):
                     url = lines[i+1].strip() if i+1 < len(lines) else ""
-                    # Ne pas exclure les .m3u8
-                    if not url or (url.endswith(".m3u") and not url.endswith(".m3u8")):
+                    if not url:
                         continue
                     if url in seen:
                         continue
                     seen.add(url)
-                    result.append(enrich(url, db, counter))
+                    result.append(enrich(line, url, db, counter))
                 elif line.startswith("http"):
-                    if line.strip().endswith(".m3u") and not line.strip().endswith(".m3u8"):
-                        continue
                     if line.strip() in seen:
                         continue
                     seen.add(line.strip())
