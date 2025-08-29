@@ -15,20 +15,30 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Download IPTV sources
+      - name: Download ALL IPTV sources
         run: |
           mkdir -p data
+
+          # Récupérer index global
           curl -L https://iptv-org.github.io/iptv/index.m3u -o data/index.m3u
-          curl -L https://raw.githubusercontent.com/iptv-org/iptv/master/index.m3u -o data/index2.m3u
-          curl -L https://iptv-org.github.io/iptv/countries/fr.m3u -o data/fr.m3u
-          curl -L https://iptv-org.github.io/iptv/countries/us.m3u -o data/us.m3u
-          curl -L https://iptv-org.github.io/iptv/countries/gb.m3u -o data/gb.m3u
-          curl -L https://iptv-org.github.io/iptv/languages/fra.m3u -o data/fra.m3u
-          curl -L https://iptv-org.github.io/iptv/languages/eng.m3u -o data/eng.m3u
-          curl -L https://iptv-org.github.io/iptv/categories/sports.m3u -o data/sports.m3u
-          curl -L https://iptv-org.github.io/iptv/categories/movies.m3u -o data/movies.m3u
-          curl -L https://iptv-org.github.io/iptv/categories/news.m3u -o data/news.m3u
-          curl -L https://iptv-org.github.io/iptv/categories/entertainment.m3u -o data/entertainment.m3u
+
+          # Récupérer tous les pays
+          for f in $(curl -s https://api.github.com/repos/iptv-org/iptv/contents/countries | grep download_url | cut -d '"' -f 4); do
+            curl -L $f -O
+          done
+          mv *.m3u data/ || true
+
+          # Récupérer toutes les langues
+          for f in $(curl -s https://api.github.com/repos/iptv-org/iptv/contents/languages | grep download_url | cut -d '"' -f 4); do
+            curl -L $f -O
+          done
+          mv *.m3u data/ || true
+
+          # Récupérer toutes les catégories
+          for f in $(curl -s https://api.github.com/repos/iptv-org/iptv/contents/categories | grep download_url | cut -d '"' -f 4); do
+            curl -L $f -O
+          done
+          mv *.m3u data/ || true
 
       - name: Merge all playlists
         run: |
