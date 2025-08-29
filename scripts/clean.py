@@ -1,76 +1,72 @@
-import os, sys, requests, re
-from urllib.parse import urlparse
+import os, sys, re
 
-# Table ISO2 -> Pays lisibles
+# Dictionnaire pour traduire abréviations → noms clairs
 COUNTRY_MAP = {
-    "FR": "FRANCE",
-    "CN": "CHINA",
-    "US": "USA",
-    "GB": "UK",
-    "DE": "GERMANY",
-    "ES": "SPAIN",
-    "IT": "ITALY",
-    "RU": "RUSSIA",
-    "JP": "JAPAN",
-    "KR": "KOREA",
-    "BR": "BRAZIL",
-    "IN": "INDIA",
+    "fr": "FRANCE",
+    "cn": "CHINA",
+    "us": "USA",
+    "gb": "UK",
+    "de": "GERMANY",
+    "es": "SPAIN",
+    "it": "ITALY",
+    "ru": "RUSSIA",
+    "jp": "JAPAN",
+    "kr": "KOREA",
+    "br": "BRAZIL",
+    "in": "INDIA",
 }
 
-def load_channels_db():
-    url = "https://iptv-org.github.io/api/channels.json"
-    try:
-        return requests.get(url).json()
-    except Exception as e:
-        print(f"Erreur récupération base: {e}")
-        return []
+CATEGORY_MAP = {
+    "sports": "SPORT",
+    "movies": "MOVIES",
+    "news": "NEWS",
+    "entertainment": "ENTERTAINMENT",
+    "kids": "KIDS",
+    "music": "MUSIC",
+}
 
-def guess_name_from_url(url):
-    hostname = urlparse(url).hostname or ""
-    hostname = hostname.replace("www.","")
-    base = hostname.split(".")[0].upper()
-    return base if base else "Channel"
+def detect_group(filename):
+    fname = filename.lower()
+    country = "OTHER"
+    category = "GENERAL"
 
-def enrich(line, url, db, counter):
-    chan = next((c for c in db if "url" in c and url in c["url"]), None)
-    if chan:
-        iso = chan.get("country", "")
-        country = COUNTRY_MAP.get(iso, iso if iso else "OTHER")
-        name = chan.get("name", f"Channel_{counter}")
-        logo = chan.get("logo", "")
-        categories = chan.get("categories", [])
-        cat = categories[0].upper() if categories else "GENERAL"
-        return f'#EXTINF:-1 group-title="{country}-{cat}",{country}-{cat}_{name}\n'
-    else:
-        # fallback si non trouvé
-        country = "OTHER"
-        guess = guess_name_from_url(url)
-        return f'#EXTINF:-1 group-title="{country}-GENERAL",{country}-GENERAL_{guess}_{counter}\n'
+    for key, val in COUNTRY_MAP.items():
+        if key in fname:
+            country = val
+            break
+    for key, val in CATEGORY_MAP.items():
+        if key in fname:
+            category = val
+            break
+
+    return f"{country}-{category}"
 
 def process(input_dir, output_file):
-    db = load_channels_db()
     seen = set()
     result = ["#EXTM3U\n"]
     counter = 1
 
     for fname in os.listdir(input_dir):
+        group = detect_group(fname)
         with open(os.path.join(input_dir, fname), "r", encoding="utf-8", errors="ignore") as f:
             lines = f.readlines()
             for i, line in enumerate(lines):
                 if line.startswith("#EXTINF"):
                     url = lines[i+1].strip() if i+1 < len(lines) else ""
-                    if not url:
-                        continue
-                    if url in seen:
+                    if not url or url in seen:
                         continue
                     seen.add(url)
-                    result.append(enrich(line, url, db, counter))
+                    # Ajouter group-title et préfixe nom
+                    if "," in line:
+                        name = line.split(",",1)[1].strip()
+                    else:
+                        name = f"Channel_{counter}"
+                    result.append(f'#EXTINF:-1 group-title="{group}",{group}_{name}\n')
                 elif line.startswith("http"):
-                    if line.strip() in seen:
-                        continue
-                    seen.add(line.strip())
-                    result.append(line)
-                    counter += 1
+                    if line.strip() not in seen:
+                        seen.add(line.strip())
+                        result.append(line)
+                        counter += 1
 
     with open(output_file, "w", encoding="utf-8") as f:
         f.writelines(result)
