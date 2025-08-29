@@ -3,7 +3,7 @@ name: Build IPTV Playlist
 on:
   workflow_dispatch:       # Lancer manuellement
   schedule:                # Lancer automatiquement tous les jours à 3h
-    - cron: "0 3 * * *"
+    - cron: "*/30 * * * *"
 
 permissions:
   contents: write          # Donne à GitHub Actions le droit de push
