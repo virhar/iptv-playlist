@@ -1,11 +1,11 @@
 import os, sys, re
 
-# Dictionnaire pour traduire abréviations → noms clairs
+# Mapping simple ISO ou mots-clés -> pays
 COUNTRY_MAP = {
     "fr": "FRANCE",
-    "cn": "CHINA",
     "us": "USA",
     "gb": "UK",
+    "cn": "CHINA",
     "de": "GERMANY",
     "es": "SPAIN",
     "it": "ITALY",
@@ -16,63 +16,73 @@ COUNTRY_MAP = {
     "in": "INDIA",
 }
 
+# Catégories communes
 CATEGORY_MAP = {
     "sports": "SPORT",
+    "sport": "SPORT",
     "movies": "MOVIES",
+    "cinema": "MOVIES",
     "news": "NEWS",
+    "info": "NEWS",
     "entertainment": "ENTERTAINMENT",
     "kids": "KIDS",
+    "cartoon": "KIDS",
     "music": "MUSIC",
+    "series": "SERIES",
+    "documentary": "DOC",
 }
 
-def detect_group(filename):
-    fname = filename.lower()
+def detect_group(line):
+    l = line.lower()
     country = "OTHER"
     category = "GENERAL"
 
+    # Détection pays
     for key, val in COUNTRY_MAP.items():
-        if key in fname:
+        if f"{key}." in l or f"/{key}" in l or f"-{key}" in l:
             country = val
             break
+
+    # Détection catégorie
     for key, val in CATEGORY_MAP.items():
-        if key in fname:
+        if key in l:
             category = val
             break
 
     return f"{country}-{category}"
 
-def process(input_dir, output_file):
-    seen = set()
+def process(input_file, output_file):
     result = ["#EXTM3U\n"]
     counter = 1
 
-    for fname in os.listdir(input_dir):
-        group = detect_group(fname)
-        with open(os.path.join(input_dir, fname), "r", encoding="utf-8", errors="ignore") as f:
-            lines = f.readlines()
-            for i, line in enumerate(lines):
-                if line.startswith("#EXTINF"):
-                    url = lines[i+1].strip() if i+1 < len(lines) else ""
-                    if not url or url in seen:
-                        continue
-                    seen.add(url)
-                    # Ajouter group-title et préfixe nom
-                    if "," in line:
-                        name = line.split(",",1)[1].strip()
-                    else:
-                        name = f"Channel_{counter}"
-                    result.append(f'#EXTINF:-1 group-title="{group}",{group}_{name}\n')
-                elif line.startswith("http"):
-                    if line.strip() not in seen:
-                        seen.add(line.strip())
-                        result.append(line)
-                        counter += 1
+    with open(input_file, "r", encoding="utf-8", errors="ignore") as f:
+        lines = f.readlines()
+
+    i = 0
+    while i < len(lines):
+        line = lines[i].strip()
+        if line.startswith("#EXTINF"):
+            url = lines[i+1].strip() if i+1 < len(lines) else ""
+            if not url.startswith("http"):
+                i += 1
+                continue
+            group = detect_group(line + url)
+            # Extraire nom existant ou générer
+            name = "Channel_" + str(counter)
+            if "," in line:
+                name = line.split(",",1)[1].strip() or name
+            result.append(f'#EXTINF:-1 group-title="{group}",{group}_{name}\n')
+            result.append(url + "\n")
+            counter += 1
+            i += 2
+        else:
+            i += 1
 
     with open(output_file, "w", encoding="utf-8") as f:
         f.writelines(result)
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
-        print("Usage: clean.py <input_dir> <output_file>")
+        print("Usage: clean.py <input_file> <output_file>")
         sys.exit(1)
     process(sys.argv[1], sys.argv[2])
