@@ -814,9 +814,9 @@ https://live.alarabiya.net/alarabiapublish/aswaaq.smil/playlist.m3u8
 #EXTINF:-1 group-title="INDIA-NEWS",INDIA-NEWS_Al Arabiya Programs (1080p)
 https://d1j4r34gq3qw9y.cloudfront.net/out/v1/96804f3a14864641a21c25e8ca9afb74/index.m3u8
 #EXTINF:-1 group-title="OTHER-NEWS",OTHER-NEWS_Al Araby TV (1080p)
-https://alarabyta.cdn.octivid.com/alaraby/smil:alaraby.stream.smil/chunklist.m3u8
+https://live.kwikmotion.com/alaraby1live/alaraby_abr/playlist.m3u8
 #EXTINF:-1 group-title="OTHER-NEWS",OTHER-NEWS_Al Araby TV 2 (1080p)
-https://alarabyta.cdn.octivid.com/alaraby2n/smil:alaraby2n.stream.smil/chunklist.m3u8
+https://live.kwikmotion.com/alaraby2live/alaraby2.smil/playlist.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_Al Ayyam TV
 http://63b03f7689049.streamlock.net:1935/live/6/playlist.m3u8
 #EXTINF:-1 group-title="INDIA-GENERAL",INDIA-GENERAL_Al Dafrah TV (720p)
@@ -2831,6 +2831,8 @@ https://iptv.ixfo.com.ar:30443/live/C4POS/playlist.m3u8
 https://protvradiostream.com:1936/canal4rd-1/ngrp:canal4rd-1_all/playlist.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_Canal 4 San Juan (576p)
 https://streamlov.alsolnet.com/canal4sanjuan/live/playlist.m3u8
+#EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_Canal 5 (720p)
+http://104.238.205.28:8989/278329_.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_Canal 5 El Líder (720p) [Not 24/7]
 https://mdstrm.com/live-stream-playlist/6287fda8ea3b8b397d1ca2ed.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_Canal 5 Pico Truncado (540p)
@@ -6999,6 +7001,8 @@ http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/64
 https://unlimited1-us.dps.live/holvoettv/holvoettv.smil/playlist.m3u8
 #EXTINF:-1 group-title="USA-GENERAL",USA-GENERAL_Holy Quran Radio Nablus (720p)
 http://streaming.zaytonatube.com:8080/holyquran/holyquran/video.m3u8
+#EXTINF:-1 group-title="INDIA-GENERAL",INDIA-GENERAL_Home 4K (2160p)
+http://178.217.72.66:8080/HOME_4K/index.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_Home & Shopping (720p)
 https://s28.qtcdn.co.kr/media/liveM3U8/idx/518045142/enc/1860408350/playlist.m3u8
 #EXTINF:-1 group-title="USA-GENERAL",USA-GENERAL_Home Crashers
@@ -14629,6 +14633,8 @@ http://189.240.210.28:1935/envivo/puecom/playlist.m3u8
 http://189.240.210.28:1935/live/setpuebla/playlist.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_Settimo Cielo Italy (720p)
 https://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/6245d3792792150007e20634/master.m3u8?advertisingId={PSID}&appVersion=unknown&deviceDNT={TARGETOPT}&deviceId={PSID}&deviceLat=0&deviceLon=0&deviceMake=samsung&deviceModel=samsung&deviceType=samsung-tvplus&deviceVersion=unknown&embedPartner=samsung-tvplus&profileFloor=&profileLimit=&samsung_app_domain={APP_DOMAIN}&samsung_app_name={APP_NAME}&us_privacy=1YNY
+#EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_Seven Channel (480p)
+https://cdn4.skygo.mn/live/disk1/TV7/HLS-FTA/TV7.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_Sevilla FC TV (360p) [Not 24/7]
 https://open.http.mp.streamamg.com/p/3001314/sp/300131400/playManifest/entryId/0_ye0b8tc0/format/applehttp/protocol/https/uiConfId/30026292/a.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_Sevimli TV (1080p)
@@ -19144,7 +19150,7 @@ https://worldofloveisland-rakuten.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="USA-GENERAL",USA-GENERAL_World Poker Tour
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5ad9b7aae738977e2c312132/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=bc86d9b4-4b91-11ef-8a44-83c5e90e038f&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=368bc423-6405-40d1-a385-9511861eca6c
 #EXTINF:-1 group-title="OTHER-SPORT",OTHER-SPORT_World Poker Tour (1080p) [Not 24/7]
-https://d3w4n3hhseniak.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/WPT-SportsTribal/120.m3u8
+https://d3w4n3hhseniak.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/WPT-DistroTV/150.m3u8
 #EXTINF:-1 group-title="USA-SPORT",USA-SPORT_World Poker Tour
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5ad9b7aae738977e2c312132/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=1b21a974-4b81-11ef-a8ac-e146e4e7be02&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=97bdb4b6-f530-4173-966d-19421ac303a0
 #EXTINF:-1 group-title="USA-SPORT",USA-SPORT_World Poker Tour
@@ -41361,3 +41367,9 @@ http://223.110.243.169/PLTV/3/224/3221227252/index.m3u8
 http://223.110.245.161/ott.js.chinamobile.com/PLTV/3/224/3221227492/index.m3u8
 #EXTINF:-1 group-title="CHINA-GENERAL",CHINA-GENERAL_CHINA-GENERAL_黑龙江卫 (1080p)
 http://183.207.248.71/cntv/live1/HD-2500k-1080P-heilongjiangstv/HD-2500k-1080P-heilongjiangstv
+#EXTINF:-1 group-title="OTHER-NEWS",OTHER-NEWS_Al Araby TV (1080p)
+https://alarabyta.cdn.octivid.com/alaraby/smil:alaraby.stream.smil/chunklist.m3u8
+#EXTINF:-1 group-title="OTHER-NEWS",OTHER-NEWS_Al Araby TV 2 (1080p)
+https://alarabyta.cdn.octivid.com/alaraby2n/smil:alaraby2n.stream.smil/chunklist.m3u8
+#EXTINF:-1 group-title="BRAZIL-SPORT",BRAZIL-SPORT_Teletica 7 (720p) [Geo-blocked]
+https://d3w4n3hhseniak.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/WPT-SportsTribal/120.m3u8
