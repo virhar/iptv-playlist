@@ -21191,16 +21191,16 @@ https://cdn.jmvstream.com/w/LVW-8155/ngrp:LVW8155_41E1ciuCvO_all/playlist.m3u8
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65a67dd13af63d0008257f17/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=bc8293f0-4b91-11ef-8a44-83c5e90e038f&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=6b751f03-945e-4e30-a909-d3e4de858fa8
 #EXTINF:-1 group-title="USA-SERIES",USA-SERIES_USA-SERIES_90210
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65a67dd13af63d0008257f17/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=1b1c5240-4b81-11ef-a8ac-e146e4e7be02&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=6e62cae5-9404-4e52-8b20-c5fc2b453e9d
-#EXTINF:-1 group-title="OTHER-MOVIES",OTHER-MOVIES_OTHER-MOVIES_&TV (1080p)
-https://amg01117-amg01117c1-amgplt0165.playout.now3.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="OTHER-NEWS",OTHER-NEWS_OTHER-NEWS_:24 (1080p)
-http://88.212.15.27/live/test_trojka_25p/playlist.m3u8
 #EXTINF:-1 group-title="OTHER-SPORT",OTHER-SPORT_OTHER-SPORT_:Šport (1080p)
 http://88.212.15.27/live/test_rtvs_sport_hevc/playlist.m3u8
 #EXTINF:-1 group-title="OTHER-ENTERTAINMENT",OTHER-ENTERTAINMENT_OTHER-ENTERTAINMENT_¡OPA! (1080i) [Geo-blocked]
 https://5fc584f3f19c9.streamlock.net/genteopa/videogenteopa/playlist.m3u8
+#EXTINF:-1 group-title="OTHER-MOVIES",OTHER-MOVIES_OTHER-MOVIES_&TV (1080p)
+https://amg01117-amg01117c1-amgplt0165.playout.now3.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="INDIA-GENERAL",INDIA-GENERAL_INDIA-GENERAL_.sci-fi
 http://178.124.179.122:8088/Sci-Fi/index.m3u8
+#EXTINF:-1 group-title="OTHER-NEWS",OTHER-NEWS_OTHER-NEWS_:24 (1080p)
+http://88.212.15.27/live/test_trojka_25p/playlist.m3u8
 #EXTINF:-1 group-title="OTHER-MOVIES",OTHER-MOVIES_SPAIN-MOVIES_@TV (720p)
 http://49.0.87.24:1936/HDAttv/Attv/playlist.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_A1 TV (1080p) [Not 24/7]
@@ -22484,7 +22484,7 @@ https://atr-live.cdn-01.cosmonova.net.ua/hls/atr_ua_hi/index.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_Atrak
 https://ncdn.telewebion.com/atrak/live/playlist.m3u8
 #EXTINF:-1 group-title="INDIA-SERIES",INDIA-SERIES_INDIA-SERIES_Atreseries Internacional (480p)
-http://181.78.208.254:8080/play/a0d5/index.m3u8
+http://38.180.133.31:8000/play/a0ko/index.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_Atrina TV
 https://atrihls.wns.live/hls/stream.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_Attica TV (1080p)
@@ -22737,6 +22737,8 @@ https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/6a
 https://amg00627-amg00627c31-rakuten-fr-3991.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanfrcc-rakutenfr/playlist.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_Banijay Mr Bean Classic
 https://amg00627-amg00627c40-rakuten-uk-5725.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanpopupcc-rakutenuk/playlist.m3u8
+#EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_Banjar TV (720p) [Not 24/7]
+https://banjartv.siar.us/banjartv/live/playlist.m3u8
 #EXTINF:-1 group-title="ITALY-GENERAL",ITALY-GENERAL_ITALY-GENERAL_Banning CityTV (Banning CA) (1080p)
 https://vbfast-c.viebit.com/072e341f-100d-4da1-9c18-65370ebf35c6/playlist.m3u8
 #EXTINF:-1 group-title="OTHER-NEWS",OTHER-NEWS_OTHER-NEWS_Bansal News (576p)
@@ -22781,8 +22783,8 @@ http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65
 https://nl2.livekadeh.com/hls2/Bayyinat.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_BBC Alba (1080p) [Geo-blocked]
 https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_alba/iptv_mse_v0_hevc.mpd
-#EXTINF:-1 group-title="INDIA-ENTERTAINMENT",INDIA-ENTERTAINMENT_INDIA-ENTERTAINMENT_BBC America
-https://dvrfl04.tulix.tv/teleup-bbca/index.m3u8
+#EXTINF:-1 group-title="USA-ENTERTAINMENT",USA-ENTERTAINMENT_USA-ENTERTAINMENT_BBC America
+https://bcovlive-a.akamaihd.net/7f5ec16d102f4b5d92e8e27bc95ff424/us-east-1/6240731308001/playlist.m3u8
 #EXTINF:-1 group-title="OTHER-NEWS",OTHER-NEWS_OTHER-NEWS_BBC Arabic (720p)
 https://vs-cmaf-pushb-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2.mpd
 #EXTINF:-1 group-title="SPAIN-SERIES",SPAIN-SERIES_SPAIN-SERIES_BBC Doctor Who (1080p)
@@ -23161,6 +23163,8 @@ https://live-cdn-stream-euw1.bfmtv.bct.nextradiotv.com/master.m3u8
 https://cdn-1.pishow.tv/live/397/master.m3u8
 #EXTINF:-1 group-title="INDIA-NEWS",INDIA-NEWS_INDIA-NEWS_Bharat24 (1080p)
 https://legitpro.co.in/bharat24live/bharat24live/index.m3u8
+#EXTINF:-1 group-title="OTHER-NEWS",OTHER-NEWS_OTHER-NEWS_Bharat Express (480p)
+https://stream1.livebox.co.in/VCAREhls/live.m3u8
 #EXTINF:-1 group-title="OTHER-NEWS",OTHER-NEWS_OTHER-NEWS_Bharat Samachar TV (576p)
 https://yuppftalive.akamaized.net/080823/bharatsamachar/playlist.m3u8
 #EXTINF:-1 group-title="OTHER-MOVIES",OTHER-MOVIES_OTHER-MOVIES_Bhojpuri Cinema (720p)
@@ -24696,7 +24700,7 @@ https://cors-proxy.cooks.fyi/https://streamer1.nexgen.bz/CINECANAL/index.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_CineLife
 https://magnolia-cinelife.amagi.tv/hls/amagi_hls_data_magnoliaA-cinelife-oando/CDN/playlist.m3u8
 #EXTINF:-1 group-title="OTHER-MOVIES",OTHER-MOVIES_OTHER-MOVIES_Cinema
-http://catchup.videoline.ru/cinema/playlist.m3u8
+https://cdn4.skygo.mn/live/disk1/CinemaTV/HLSv3-FTA/CinemaTV.m3u8
 #EXTINF:-1 group-title="OTHER-MOVIES",OTHER-MOVIES_OTHER-MOVIES_Cinema 1 (1080p)
 http://62.233.57.226:8001/play/a00l00
 #EXTINF:-1 group-title="OTHER-MOVIES",OTHER-MOVIES_OTHER-MOVIES_Cinema Hausa (720p)
@@ -25605,8 +25609,6 @@ https://stream.oursnetworktv.com/latin/encoder87/playlist.m3u8
 https://vidcdn.vidgyor.com/dighvijay-origin/liveabr/playlist.m3u8
 #EXTINF:-1 group-title="INDIA-NEWS",INDIA-NEWS_INDIA-NEWS_Digi 24 (720p)
 https://edge-ar.rcs-rds.ro/digi24ar/index.m3u8
-#EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_Digi Movie [Not 24/7]
-https://fastdehost.com/live/digimovie.m3u8
 #EXTINF:-1 group-title="USA-GENERAL",USA-GENERAL_USA-GENERAL_Digimon Adventure
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/617bae1d69bca3000729561e/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=8e0662e2-1f2c-11ef-86d8-5d587df108c6&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=d081da78-acbb-459e-9034-63720548296e
 #EXTINF:-1 group-title="INDIA-ENTERTAINMENT",INDIA-ENTERTAINMENT_INDIA-ENTERTAINMENT_DigiOne (720p) [Geo-blocked]
@@ -26683,6 +26685,8 @@ https://apollo.production-public.tubi.io/live/ac-filmrise-blacktv.m3u8
 https://apollo.production-public.tubi.io/live/ac-filmrise-blacktv-canada.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_Filmrise Cheaters (720p)
 https://apollo.production-public.tubi.io/live/ac-cheaters.m3u8
+#EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_FilmRise Classic TV (720p)
+https://d2tv4k5moji5m7.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-lu4pzh9l4b57p/master.m3u8
 #EXTINF:-1 group-title="INDIA-GENERAL",INDIA-GENERAL_INDIA-GENERAL_FilmRise DeGrassi la nouvelle génération
 https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads.xumo_channelId=88883113
 #EXTINF:-1 group-title="SPAIN-MOVIES",SPAIN-MOVIES_SPAIN-MOVIES_Filmrise Forensic Files (720p)
@@ -27253,8 +27257,8 @@ https://rds3.desdeparaguay.net/gotv/gotv/playlist.m3u8
 https://brandusa-gousa-1-in.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_GO-TV Canale 163 (720p)
 https://6zklxkbbdw9b-hls-live.mariatvcdn.it/msmotor/2f759512164fc6fe4acbed6a5648993a.sdp/playlist.m3u8
-#EXTINF:-1 group-title="OTHER-NEWS",OTHER-NEWS_OTHER-NEWS_Goa365 (720p)
-https://asia.mslivestream.net/mslive/f9fe659e19d111baf97526ad526b55b4.sdp/playlist.m3u8
+#EXTINF:-1 group-title="OTHER-NEWS",OTHER-NEWS_OTHER-NEWS_Goa365 (1080p)
+https://ktismaservers.in:3086/live/goa365live.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_Goal TV
 https://streams2.sofast.tv/sofastplayout/WiseM3U8_1/master.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_GOD TV Africa (576p)
@@ -27789,6 +27793,8 @@ https://livefta.malimarcdn.com/ftaedge00/hmongstartv.sdp/playlist.m3u8
 https://livefta.malimarcdn.com/ftaedge00/cvabroadcasting.stream/playlist.m3u8
 #EXTINF:-1 group-title="OTHER-NEWS",OTHER-NEWS_OTHER-NEWS_HMTV (720p)
 https://cdn-1.pishow.tv/live/280/master.m3u8
+#EXTINF:-1 group-title="INDIA-NEWS",INDIA-NEWS_INDIA-NEWS_HNN 24x7 (576p)
+https://ott.livelegitpro.in:9899/hnnnews/hnnnews/tracks-v1/index.fmp4.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_Hoarders (720p)
 https://8f2546fe.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0hvYXJkZXJzX0hMUw/playlist.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_Hobby Maker (720p)
@@ -29037,8 +29043,6 @@ https://viamotionhsi.netplus.ch/live/eds/kikahd/browser-HLS8/kikahd.m3u8
 https://5bf7b725107e5.streamlock.net/kstv/kstv/playlist.m3u8
 #EXTINF:-1 group-title="INDIA-NEWS",INDIA-NEWS_INDIA-NEWS_Kin24
 http://51.254.199.122:8080/kin24/index.m3u8
-#EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_King Movie [Not 24/7]
-https://fastdehost.com/live/kingmovie.m3u8
 #EXTINF:-1 group-title="USA-GENERAL",USA-GENERAL_USA-GENERAL_King of Queens
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/62f4f414c2ba130007f8b24e/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=2c7ac9d7-35fc-11ef-a031-2b5d494037a2&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=4a0db601-9852-43bd-90bd-3b44aed929f7
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_King TV (720p) [Not 24/7]
@@ -29601,6 +29605,8 @@ https://amg02393-awpg-amg02393c3-rakuten-uk-2462.playouts.now.amagi.tv/playlist/
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/64c2201a2a7f2200089a0af2/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=2c7af0e2-35fc-11ef-a031-2b5d494037a2&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=58a05062-88d0-47f4-955b-e4e552292ea4
 #EXTINF:-1 group-title="USA-GENERAL",USA-GENERAL_USA-GENERAL_Let's Make A Deal
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6267352efcf21c0007c76642/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c298db0-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=606453b2-4fb6-4739-81ef-896c15239d3e
+#EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_LGD Television (720p)
+https://streamtv.intervenhosting.net:3403/hybrid/play.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_LHCAZTV
 https://cdn3.wowza.com/5/cHYzekYzM2kvTVFH/lakehavasucity/G0643_003/playlist.m3u8
 #EXTINF:-1 group-title="INDIA-GENERAL",INDIA-GENERAL_INDIA-GENERAL_Liangshan TV [Not 24/7]
@@ -30079,6 +30085,8 @@ https://cdn-1.pishow.tv/live/1011/master.m3u8
 https://cdn-2.pishow.tv/live/228/master.m3u8
 #EXTINF:-1 group-title="OTHER-ENTERTAINMENT",OTHER-ENTERTAINMENT_OTHER-ENTERTAINMENT_Manoranjan TV (720p)
 https://cdn-1.pishow.tv/live/1013/master.m3u8
+#EXTINF:-1 group-title="OTHER-ENTERTAINMENT",OTHER-ENTERTAINMENT_OTHER-ENTERTAINMENT_Manoto TV
+https://m3u.iranvids.com/manoto/output.m3u8
 #EXTINF:-1 group-title="OTHER-NEWS",OTHER-NEWS_OTHER-NEWS_Mantavya News (576p)
 https://yuppftalive.akamaized.net/080823/mantavya/playlist.m3u8
 #EXTINF:-1 group-title="SPAIN-GENERAL",SPAIN-GENERAL_SPAIN-GENERAL_Mar TV (1080p)
@@ -30435,12 +30443,12 @@ https://fl3.moveonjoy.com/EPIX_DRIVE_IN/index.m3u8
 https://vod.streams.ovh:3876/stream/play.m3u8
 #EXTINF:-1 group-title="INDIA-GENERAL",INDIA-GENERAL_INDIA-GENERAL_MGS TV (720p) [Not 24/7]
 https://cdn.gunadarma.ac.id/streams/mgstv/ingestmgstv.m3u8
-#EXTINF:-1 group-title="OTHER-NEWS",OTHER-NEWS_OTHER-NEWS_MH One Music (1080p)
-https://mhlive.paramountinfosystem.com/mhonemusictest/d0dbe915091d400bd8ee7f27f0791303.sdp/playlist.m3u8
-#EXTINF:-1 group-title="OTHER-NEWS",OTHER-NEWS_OTHER-NEWS_MH One News (1080p)
-https://mhlive.paramountinfosystem.com/mhonetest/d0dbe915091d400bd8ee7f27f0791303.sdp/playlist.m3u8
-#EXTINF:-1 group-title="OTHER-NEWS",OTHER-NEWS_OTHER-NEWS_MH One Shraddha (1080p)
-https://mhlive.paramountinfosystem.com/mhoneshraddhatest/d0dbe915091d400bd8ee7f27f0791303.sdp/playlist.m3u8
+#EXTINF:-1 group-title="OTHER-MUSIC",OTHER-MUSIC_OTHER-MUSIC_Mh 1 Music (720p)
+https://mhonemusic.com/hls/1/stream.m3u8
+#EXTINF:-1 group-title="OTHER-NEWS",OTHER-NEWS_OTHER-NEWS_Mh 1 News (1080p)
+https://mhonenews.in/hls/stream.m3u8
+#EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_MH One Shraddha (720p)
+https://mhoneshaddha.com/hls/1/stream.m3u8
 #EXTINF:-1 group-title="OTHER-ENTERTAINMENT",OTHER-ENTERTAINMENT_OTHER-ENTERTAINMENT_MHZ
 https://mhz-samsung-linear-ca.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_Mi Canal (576p) [Not 24/7]
@@ -30933,6 +30941,8 @@ https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/e3
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/60511efd71ec430007f50d97/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2a29f6-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=e048dd46-54cc-485e-b0d7-5ee578a0a861
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_RUSSIA-GENERAL_Munnaaru
 https://customer-ujex1meek7koqd9x.cloudflarestream.com/6a46f90ca384c7419efdbef3ff1892a9/manifest/video.m3u8
+#EXTINF:-1 group-title="OTHER-NEWS",OTHER-NEWS_OTHER-NEWS_Munsif TV (720p)
+https://d35j504z0x2vu2.cloudfront.net/v1/manifest/0bc8e8376bd8417a1b6761138aa41c26c7309312/munsif-tv/e5ae862b-c65c-4b17-b9a8-038853525c64/0.m3u8
 #EXTINF:-1 group-title="INDIA-GENERAL",INDIA-GENERAL_INDIA-GENERAL_Murator TV (1080i)
 https://s-pl-01.mediatool.tv/playout/mupl-abr/index.m3u8
 #EXTINF:-1 group-title="USA-GENERAL",USA-GENERAL_USA-GENERAL_Murder She Wrote
@@ -35185,16 +35195,6 @@ http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5c
 https://restream.churchtv247.co.za/Apostle/Hggc@24/1.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_Sercano TV (720p) [Not 24/7]
 http://stream.grupoabchn.com:1935/SERCANOHD/SERCANOLive.smil/playlist.m3u8
-#EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_Serial Baran1 [Not 24/7]
-https://fastdehost.com/live/serialbaran1.m3u8
-#EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_Serial Baran2 [Not 24/7]
-https://server3.fastdehost.com/live/serialbaran2.m3u8
-#EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_Serial Baran3 [Not 24/7]
-https://server3.fastdehost.com/live/serialbaran3.m3u8
-#EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_Serial Baran4 [Not 24/7]
-https://server3.fastdehost.com/live/serialbaran4.m3u8
-#EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_Serial Baran5 [Not 24/7]
-https://server4.fastdehost.com/live/serialbaran5.m3u8
 #EXTINF:-1 group-title="ITALY-GENERAL",ITALY-GENERAL_ITALY-GENERAL_Serially Crime (720p)
 https://ixmediasrl-seriallycrime-1-it.rakuten.wurl.tv/playlist.m3u8
 #EXTINF:-1 group-title="OTHER-SERIES",OTHER-SERIES_OTHER-SERIES_Serie Teen Italy (720p)
@@ -35447,20 +35447,6 @@ https://linear-p.media.skyone.co.nz/primeplus1.clear.m3u8
 https://skylivetab-new.akamaized.net/hls/live/2038780/sky1/index.m3u8
 #EXTINF:-1 group-title="INDIA-SPORT",INDIA-SPORT_INDIA-SPORT_Sky Racing 2 (720p) [Geo-blocked]
 https://skylivetab-new.akamaized.net/hls/live/2038781/sky2/index.m3u8
-#EXTINF:-1 group-title="OTHER-SPORT",OTHER-SPORT_OTHER-SPORT_Sky Sport 1 (1080p)
-http://primestreams.tv:826/live/SF11/vulwBvtfo9/118585.ts
-#EXTINF:-1 group-title="OTHER-SPORT",OTHER-SPORT_OTHER-SPORT_Sky Sport 2 (1080p)
-http://primestreams.tv:826/live/SF11/vulwBvtfo9/118586.ts
-#EXTINF:-1 group-title="OTHER-SPORT",OTHER-SPORT_OTHER-SPORT_Sky Sport 3 (1080p)
-https://hls.sheepland.xyz/play/0/15?proxy=0
-#EXTINF:-1 group-title="OTHER-SPORT",OTHER-SPORT_OTHER-SPORT_Sky Sport 4 (1080p)
-https://hls.sheepland.xyz/play/0/36?proxy=0
-#EXTINF:-1 group-title="OTHER-SPORT",OTHER-SPORT_OTHER-SPORT_Sky Sport 5 (1080p)
-http://primestreams.tv:826/live/SF11/vulwBvtfo9/118589.ts
-#EXTINF:-1 group-title="OTHER-SPORT",OTHER-SPORT_OTHER-SPORT_Sky Sport 6 (1080p)
-https://hls.sheepland.xyz/play/0/70?proxy=0
-#EXTINF:-1 group-title="OTHER-SPORT",OTHER-SPORT_OTHER-SPORT_Sky Sport 7 (1080p)
-https://hls.sheepland.xyz/play/0/66?proxy=0
 #EXTINF:-1 group-title="INDIA-SPORT",INDIA-SPORT_INDIA-SPORT_Sky Thoroughbred Central (720p) [Geo-blocked]
 https://skylivetab-new.akamaized.net/hls/live/2038782/stcsd/index.m3u8
 #EXTINF:-1 group-title="OTHER-MOVIES",OTHER-MOVIES_OTHER-MOVIES_SL 1 (720p)
@@ -35674,7 +35660,7 @@ https://candlelightmedia-sparklightlove-6-us.roku.wurl.tv/playlist.m3u8
 #EXTINF:-1 group-title="OTHER-SPORT",OTHER-SPORT_OTHER-SPORT_Speed Sport 1 (1080p)
 https://linear-599.frequency.stream/dist/stirr/599/hls/master/playlist.m3u8
 #EXTINF:-1 group-title="INDIA-MUSIC",INDIA-MUSIC_INDIA-MUSIC_SpektraTV (720p)
-https://cloudvideo.servers10.com:8081/8136/index.m3u8
+https://cloudvideo.servers10.com:8081/8026/tracks-v1a1/index.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_Speranta TV (1080p)
 https://customer-x8zydurm357k8j9p.cloudflarestream.com/0dd00c080ff4cbe839a12c923610a55c/manifest/video.m3u8
 #EXTINF:-1 group-title="USA-GENERAL",USA-GENERAL_USA-GENERAL_SPIEGEL TV
@@ -35957,8 +35943,8 @@ https://live.enhdtv.com:8081/8060/index.m3u8
 https://video.primexsports.com/suchnews/live/playlist.m3u8
 #EXTINF:-1 group-title="INDIA-GENERAL",INDIA-GENERAL_INDIA-GENERAL_Sudan TV (360p)
 https://cdn-globecast.akamaized.net/live/eds/sudan_tv/hls_roku/index.m3u8
-#EXTINF:-1 group-title="INDIA-NEWS",INDIA-NEWS_INDIA-NEWS_Sudarshan News (720p)
-https://ott.livelegitpro.in/pusa/sudarshantv/index.m3u8
+#EXTINF:-1 group-title="INDIA-NEWS",INDIA-NEWS_INDIA-NEWS_Sudarshan News (1080p)
+https://ott.livelegitpro.in/sudarshannews/sudarshannews/tracks-v1/index.fmp4.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_Sukan RTM [Geo-blocked]
 https://d25tgymtnqzu8s.cloudfront.net/smil:sukan/manifest.mpd
 #EXTINF:-1 group-title="INDIA-GENERAL",INDIA-GENERAL_INDIA-GENERAL_Suke TV (720p)
@@ -36061,6 +36047,8 @@ https://ss2.tvrdomi.com:1936/supremateve/supremateve/playlist.m3u8
 https://lbs-us1.suprememastertv.com/720p.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_SUR TV
 https://redirector.rudo.video/hls-video/ey6283je82983je9823je8jowowiekldk9838274/surtv/surtv.smil/playlist.m3u8
+#EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_Surabaya TV (1080p)
+https://e.siar.us/live/surabayatv.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_SPAIN-GENERAL_Suram TV (1080p)
 https://livetv.305streamhd.com:3111/live/suramtvlive.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_Surfing+ (1080p)
@@ -39045,6 +39033,8 @@ http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5f
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5d7154fa8326b6ce4ec31f2e/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2d1023-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=0f21eb55-d525-4fad-8ebe-028203d6d0ec
 #EXTINF:-1 group-title="OTHER-MUSIC",OTHER-MUSIC_OTHER-MUSIC_VH1 Italia (1080p)
 https://content.uplynk.com/channel/36953f5b6546464590d2fcd954bc89cf.m3u8
+#EXTINF:-1 group-title="INDIA-GENERAL",INDIA-GENERAL_INDIA-GENERAL_VHS TV [Not 24/7]
+https://v2.catcast.tv/content/47609/index.m3u8
 #EXTINF:-1 group-title="INDIA-GENERAL",INDIA-GENERAL_INDIA-GENERAL_Vía Altomayo (720p) [Not 24/7]
 https://live.obslivestream.com/viaaltomayomux/index.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_Vía Televisión (720P) [Not 24/7]
@@ -39985,8 +39975,8 @@ https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeepunjabharyanahima/v1/master
 https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeerajashthannews/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/8e864b9a-1681-41a0-99a6-387490bc5b24/main.m3u8
 #EXTINF:-1 group-title="INDIA-GENERAL",INDIA-GENERAL_INDIA-GENERAL_Zee Salaam (720p)
 https://d3i8oqsdv88b3m.cloudfront.net/out/v1/08f6360f9104421f90319460c0e03f11/index.m3u8
-#EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_Zee Uttar Pradesh/Uttarakhand (720p)
-https://livetv-channels.b-cdn.net/8076/playlist.m3u8
+#EXTINF:-1 group-title="INDIA-GENERAL",INDIA-GENERAL_INDIA-GENERAL_Zee Uttar Pradesh/Uttarakhand (720p)
+https://duw35ict5q7th.cloudfront.net/index_3.m3u8
 #EXTINF:-1 group-title="INDIA-GENERAL",INDIA-GENERAL_INDIA-GENERAL_Zee World
 https://live20.bozztv.com/dvrfl06/astv/astv-zeemagicafrica/index.m3u8
 #EXTINF:-1 group-title="OTHER-MUSIC",OTHER-MUSIC_OTHER-MUSIC_Zerouno TV (720p)
@@ -40293,8 +40283,8 @@ http://hls.volgograd1vtv.cdnvideo.ru/volgograd1vtv/volgograd1vtv.sdp/playlist.m3
 https://tvcdn01.oktv.kz/tv/mtrk/playlist.m3u8
 #EXTINF:-1 group-title="SPAIN-MUSIC",SPAIN-MUSIC_SPAIN-MUSIC_Муз союз (576p)
 https://hls-tvsoyuz.cdnvideo.ru/tvsoyuz2/muzsoyuz.6fw0-58xp-acts-esy0/playlist.m3u8
-#EXTINF:-1 group-title="OTHER-MUSIC",OTHER-MUSIC_OTHER-MUSIC_Муз-ТВ
-https://livetv.mylifeisgood.net.ru/channels/muztvhd.m3u8
+#EXTINF:-1 group-title="OTHER-MUSIC",OTHER-MUSIC_OTHER-MUSIC_МузТВ
+https://streaming.televizor-24-tochka.ru/live/20.m3u8
 #EXTINF:-1 group-title="INDIA-MUSIC",INDIA-MUSIC_INDIA-MUSIC_Музыка 1 International [Not 24/7]
 https://kino-1.catcast.tv/content/37745/index.m3u8
 #EXTINF:-1 group-title="INDIA-MUSIC",INDIA-MUSIC_INDIA-MUSIC_Музыка Кино International [Not 24/7]
@@ -40421,8 +40411,8 @@ https://tele2dvrnat01-02.cdnvideo.ru/stream/NAT_Prima/hls/index.m3u8
 https://prodvizhenie.bonus-tv.ru/cdn/prodvizhenie/playlist.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_Просвещение (540p) [Geo-blocked]
 https://cdn-01.bonus-tv.ru/prosveschenie_edge/playlist.m3u8
-#EXTINF:-1 group-title="FRANCE-ENTERTAINMENT",FRANCE-ENTERTAINMENT_FRANCE-ENTERTAINMENT_Пятница!
-https://livetv.mylifeisgood.net.ru/channels/fridayhd.m3u8
+#EXTINF:-1 group-title="OTHER-ENTERTAINMENT",OTHER-ENTERTAINMENT_OTHER-ENTERTAINMENT_Пятница!
+https://streaming.televizor-24-tochka.ru/live/19.m3u8
 #EXTINF:-1 group-title="FRANCE-ENTERTAINMENT",FRANCE-ENTERTAINMENT_FRANCE-ENTERTAINMENT_Пятница! International
 https://cdn4.skygo.mn/live/disk1/Friday/HLSv3-FTA/Friday.m3u8
 #EXTINF:-1 group-title="RUSSIA-NEWS",RUSSIA-NEWS_RUSSIA-NEWS_Радио Говорит Москва (404p) [Not 24/7]
@@ -40483,16 +40473,48 @@ https://live2.mediacdn.ru/sr1/sever/playlist.m3u8
 https://vgtrkregion-reg.cdnvideo.ru/vgtrk/krasnoyarsk/sibir24-hd/index.m3u8
 #EXTINF:-1 group-title="INDIA-GENERAL",INDIA-GENERAL_INDIA-GENERAL_Сибирь 24 (Новосибирск)
 https://vgtrkregion-reg.cdnvideo.ru/vgtrk/novosibirsk/sibir24-hd/index.m3u8
+#EXTINF:-1 group-title="INDIA-MUSIC",INDIA-MUSIC_INDIA-MUSIC_Сити Эдем Meditation Music [Not 24/7]
+https://cityeden.catcast.tv/content/47410/index.m3u8
+#EXTINF:-1 group-title="INDIA-MUSIC",INDIA-MUSIC_INDIA-MUSIC_Сити Эдем Play Христианский Музыкальный [Not 24/7]
+https://cityeden.catcast.tv/content/34100/index.m3u8
+#EXTINF:-1 group-title="INDIA-GENERAL",INDIA-GENERAL_INDIA-GENERAL_Сити Эдем АвтоГид [Not 24/7]
+https://cityeden.catcast.tv/content/47515/index.m3u8
+#EXTINF:-1 group-title="INDIA-MUSIC",INDIA-MUSIC_INDIA-MUSIC_Сити Эдем Бирма Play [Not 24/7]
+https://cityeden.catcast.tv/content/34364/index.m3u8
+#EXTINF:-1 group-title="INDIA-MOVIES",INDIA-MOVIES_INDIA-MOVIES_Сити Эдем КиноАзия [Not 24/7]
+https://cityeden.catcast.tv/content/34393/index.m3u8
+#EXTINF:-1 group-title="INDIA-MOVIES",INDIA-MOVIES_INDIA-MOVIES_Сити Эдем КиноАрт [Not 24/7]
+https://cityeden.catcast.tv/content/38398/index.m3u8
+#EXTINF:-1 group-title="INDIA-MOVIES",INDIA-MOVIES_INDIA-MOVIES_Сити Эдем КиноДетектив [Not 24/7]
+https://cityeden.catcast.tv/content/41327/index.m3u8
+#EXTINF:-1 group-title="INDIA-SERIES",INDIA-SERIES_ITALY-SERIES_Сити Эдем КиноДок [Not 24/7]
+https://cityeden.catcast.tv/content/38354/index.m3u8
+#EXTINF:-1 group-title="INDIA-MOVIES",INDIA-MOVIES_INDIA-MOVIES_Сити Эдем КиноДрама [Not 24/7]
+https://cityeden.catcast.tv/content/45269/index.m3u8
 #EXTINF:-1 group-title="INDIA-MOVIES",INDIA-MOVIES_INDIA-MOVIES_Сити Эдем КиноКлассика [Not 24/7]
-https://v2.catcast.tv/content/34185/index.m3u8
+https://cityeden.catcast.tv/content/34185/index.m3u8
+#EXTINF:-1 group-title="INDIA-MOVIES",INDIA-MOVIES_INDIA-MOVIES_Сити Эдем КиноКомедия [Not 24/7]
+https://cityeden.catcast.tv/content/41331/index.m3u8
 #EXTINF:-1 group-title="INDIA-MOVIES",INDIA-MOVIES_INDIA-MOVIES_Сити Эдем КиноМистика [Not 24/7]
-https://v2.catcast.tv/content/40783/index.m3u8
+https://cityeden.catcast.tv/content/40783/index.m3u8
+#EXTINF:-1 group-title="INDIA-MOVIES",INDIA-MOVIES_INDIA-MOVIES_Сити Эдем КиноСемья [Not 24/7]
+https://v2.catcast.tv/content/38128/index.m3u8
+#EXTINF:-1 group-title="INDIA-MOVIES",INDIA-MOVIES_INDIA-MOVIES_Сити Эдем КиноФантастика [Not 24/7]
+https://cityeden.catcast.tv/content/45268/index.m3u8
 #EXTINF:-1 group-title="INDIA-MOVIES",INDIA-MOVIES_INDIA-MOVIES_Сити Эдем КиноЭкшен [Not 24/7]
-https://v2.catcast.tv/content/41333/index.m3u8
-#EXTINF:-1 group-title="INDIA-GENERAL",INDIA-GENERAL_INDIA-GENERAL_Сити Эдем ТВ [Not 24/7]
-https://v2.catcast.tv/content/34246/index.m3u8
+https://cityeden.catcast.tv/content/41333/index.m3u8
+#EXTINF:-1 group-title="INDIA-MUSIC",INDIA-MUSIC_INDIA-MUSIC_Сити Эдем Классическая Музыка [Not 24/7]
+https://cityeden.catcast.tv/content/47400/index.m3u8
+#EXTINF:-1 group-title="INDIA-GENERAL",INDIA-GENERAL_KOREA-GENERAL_Сити Эдем МедЗдрав [Not 24/7]
+https://cityeden.catcast.tv/content/47519/index.m3u8
+#EXTINF:-1 group-title="INDIA-GENERAL",INDIA-GENERAL_INDIA-GENERAL_Сити Эдем Рецепты Гурмана [Not 24/7]
+https://cityeden.catcast.tv/content/47516/index.m3u8
+#EXTINF:-1 group-title="INDIA-MUSIC",INDIA-MUSIC_INDIA-MUSIC_Сити Эдем Сиртаки ТВ [Not 24/7]
+https://cityeden.catcast.tv/content/46421/index.m3u8
+#EXTINF:-1 group-title="INDIA-GENERAL",INDIA-GENERAL_INDIA-GENERAL_Сити Эдем ТВ Христианский [Not 24/7]
+https://cityeden.catcast.tv/content/34246/index.m3u8
 #EXTINF:-1 group-title="INDIA-SERIES",INDIA-SERIES_INDIA-SERIES_Сити Эдем ТелеНовелла [Not 24/7]
-https://v2.catcast.tv/content/46209/index.m3u8
+https://cityeden.catcast.tv/content/46209/index.m3u8
 #EXTINF:-1 group-title="OTHER-KIDS",OTHER-KIDS_OTHER-KIDS_Смайл ТВ
 https://5f05e059699ae.streamlock.net/WEB_Smilik/ngrp:Smilik.stream-adaptive/playlist.m3u8
 #EXTINF:-1 group-title="OTHER-SERIES",OTHER-SERIES_OTHER-SERIES_Смотрим Честный Детектив
@@ -40533,10 +40555,10 @@ http://cdn10.live-tv.od.ua:8081/sferarv/sferarv-abr/playlist.m3u8
 https://streaming.televizor-24-tochka.ru/live/24.m3u8
 #EXTINF:-1 group-title="OTHER-KIDS",OTHER-KIDS_OTHER-KIDS_Тамыр (Уфа)
 https://bstonline.mediacdn.ru/cdn/tamyr/playlist.m3u8
+#EXTINF:-1 group-title="OTHER-ENTERTAINMENT",OTHER-ENTERTAINMENT_OTHER-ENTERTAINMENT_ТВ3
+https://streaming.televizor-24-tochka.ru/live/18.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_RUSSIA-GENERAL_ТВ Центр
 https://tvc-hls.cdnvideo.ru/tvc-res/smil:vd9221.smil/playlist.m3u8
-#EXTINF:-1 group-title="OTHER-ENTERTAINMENT",OTHER-ENTERTAINMENT_OTHER-ENTERTAINMENT_ТВ-3
-https://livetv.mylifeisgood.net.ru/channels/tv3hd.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_ТВА (Чернiвцi) (576p)
 http://hls.cdn.ua/tva.ua_live/livestream/playlist.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_ТВК 24 (576p)
@@ -40570,7 +40592,7 @@ http://live.tkr.cdnvideo.ru/tkr/tkr.sdp/playlist.m3u8
 #EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_ТНВ-Планета (Казань)
 https://planeta.mediacdn.ru/cdn/tnvplanet/playlist.m3u8
 #EXTINF:-1 group-title="OTHER-ENTERTAINMENT",OTHER-ENTERTAINMENT_OTHER-ENTERTAINMENT_ТНТ
-https://livetv.mylifeisgood.net.ru/channels/tnthd.m3u8
+https://streaming.televizor-24-tochka.ru/live/23.m3u8
 #EXTINF:-1 group-title="OTHER-ENTERTAINMENT",OTHER-ENTERTAINMENT_USA-ENTERTAINMENT_ТНТ4 [Geo-blocked]
 https://zabava-htlive.cdn.ngenix.net/hls/CH_TNT4/variant.m3u8
 #EXTINF:-1 group-title="OTHER-ENTERTAINMENT",OTHER-ENTERTAINMENT_OTHER-ENTERTAINMENT_ТНТ4 International
@@ -41401,11 +41423,75 @@ http://223.110.243.169/PLTV/3/224/3221227252/index.m3u8
 http://223.110.245.161/ott.js.chinamobile.com/PLTV/3/224/3221227492/index.m3u8
 #EXTINF:-1 group-title="CHINA-GENERAL",CHINA-GENERAL_CHINA-GENERAL_黑龙江卫 (1080p)
 http://183.207.248.71/cntv/live1/HD-2500k-1080P-heilongjiangstv/HD-2500k-1080P-heilongjiangstv
-#EXTINF:-1 group-title="OTHER-NEWS",OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_Al Araby TV (1080p)
+#EXTINF:-1 group-title="INDIA-SERIES",INDIA-SERIES_INDIA-SERIES_INDIA-SERIES_Atreseries Internacional (480p)
+http://181.78.208.254:8080/play/a0d5/index.m3u8
+#EXTINF:-1 group-title="INDIA-ENTERTAINMENT",INDIA-ENTERTAINMENT_INDIA-ENTERTAINMENT_INDIA-ENTERTAINMENT_BBC America
+https://dvrfl04.tulix.tv/teleup-bbca/index.m3u8
+#EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_OTHER-GENERAL_Digi Movie [Not 24/7]
+https://fastdehost.com/live/digimovie.m3u8
+#EXTINF:-1 group-title="OTHER-NEWS",OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_Goa365 (720p)
+https://asia.mslivestream.net/mslive/f9fe659e19d111baf97526ad526b55b4.sdp/playlist.m3u8
+#EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_OTHER-GENERAL_King Movie [Not 24/7]
+https://fastdehost.com/live/kingmovie.m3u8
+#EXTINF:-1 group-title="OTHER-NEWS",OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_MH One Music (1080p)
+https://mhlive.paramountinfosystem.com/mhonemusictest/d0dbe915091d400bd8ee7f27f0791303.sdp/playlist.m3u8
+#EXTINF:-1 group-title="OTHER-NEWS",OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_MH One News (1080p)
+https://mhlive.paramountinfosystem.com/mhonetest/d0dbe915091d400bd8ee7f27f0791303.sdp/playlist.m3u8
+#EXTINF:-1 group-title="OTHER-NEWS",OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_MH One Shraddha (1080p)
+https://mhlive.paramountinfosystem.com/mhoneshraddhatest/d0dbe915091d400bd8ee7f27f0791303.sdp/playlist.m3u8
+#EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_OTHER-GENERAL_Serial Baran1 [Not 24/7]
+https://fastdehost.com/live/serialbaran1.m3u8
+#EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_OTHER-GENERAL_Serial Baran2 [Not 24/7]
+https://server3.fastdehost.com/live/serialbaran2.m3u8
+#EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_OTHER-GENERAL_Serial Baran3 [Not 24/7]
+https://server3.fastdehost.com/live/serialbaran3.m3u8
+#EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_OTHER-GENERAL_Serial Baran4 [Not 24/7]
+https://server3.fastdehost.com/live/serialbaran4.m3u8
+#EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_OTHER-GENERAL_Serial Baran5 [Not 24/7]
+https://server4.fastdehost.com/live/serialbaran5.m3u8
+#EXTINF:-1 group-title="OTHER-SPORT",OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_Sky Sport 1 (1080p)
+http://primestreams.tv:826/live/SF11/vulwBvtfo9/118585.ts
+#EXTINF:-1 group-title="OTHER-SPORT",OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_Sky Sport 2 (1080p)
+http://primestreams.tv:826/live/SF11/vulwBvtfo9/118586.ts
+#EXTINF:-1 group-title="OTHER-SPORT",OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_Sky Sport 3 (1080p)
+https://hls.sheepland.xyz/play/0/15?proxy=0
+#EXTINF:-1 group-title="OTHER-SPORT",OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_Sky Sport 4 (1080p)
+https://hls.sheepland.xyz/play/0/36?proxy=0
+#EXTINF:-1 group-title="OTHER-SPORT",OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_Sky Sport 5 (1080p)
+http://primestreams.tv:826/live/SF11/vulwBvtfo9/118589.ts
+#EXTINF:-1 group-title="OTHER-SPORT",OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_Sky Sport 6 (1080p)
+https://hls.sheepland.xyz/play/0/70?proxy=0
+#EXTINF:-1 group-title="OTHER-SPORT",OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_Sky Sport 7 (1080p)
+https://hls.sheepland.xyz/play/0/66?proxy=0
+#EXTINF:-1 group-title="INDIA-MUSIC",INDIA-MUSIC_INDIA-MUSIC_INDIA-MUSIC_SpektraTV (720p)
+https://cloudvideo.servers10.com:8081/8136/index.m3u8
+#EXTINF:-1 group-title="INDIA-NEWS",INDIA-NEWS_INDIA-NEWS_INDIA-NEWS_Sudarshan News (720p)
+https://ott.livelegitpro.in/pusa/sudarshantv/index.m3u8
+#EXTINF:-1 group-title="OTHER-GENERAL",OTHER-GENERAL_OTHER-GENERAL_OTHER-GENERAL_Zee Uttar Pradesh/Uttarakhand (720p)
+https://livetv-channels.b-cdn.net/8076/playlist.m3u8
+#EXTINF:-1 group-title="OTHER-MUSIC",OTHER-MUSIC_OTHER-MUSIC_OTHER-MUSIC_Муз-ТВ
+https://livetv.mylifeisgood.net.ru/channels/muztvhd.m3u8
+#EXTINF:-1 group-title="FRANCE-ENTERTAINMENT",FRANCE-ENTERTAINMENT_FRANCE-ENTERTAINMENT_FRANCE-ENTERTAINMENT_Пятница!
+https://livetv.mylifeisgood.net.ru/channels/fridayhd.m3u8
+#EXTINF:-1 group-title="INDIA-MOVIES",INDIA-MOVIES_INDIA-MOVIES_INDIA-MOVIES_Сити Эдем КиноКлассика [Not 24/7]
+https://v2.catcast.tv/content/34185/index.m3u8
+#EXTINF:-1 group-title="INDIA-MOVIES",INDIA-MOVIES_INDIA-MOVIES_INDIA-MOVIES_Сити Эдем КиноМистика [Not 24/7]
+https://v2.catcast.tv/content/40783/index.m3u8
+#EXTINF:-1 group-title="INDIA-MOVIES",INDIA-MOVIES_INDIA-MOVIES_INDIA-MOVIES_Сити Эдем КиноЭкшен [Not 24/7]
+https://v2.catcast.tv/content/41333/index.m3u8
+#EXTINF:-1 group-title="INDIA-GENERAL",INDIA-GENERAL_INDIA-GENERAL_INDIA-GENERAL_Сити Эдем ТВ [Not 24/7]
+https://v2.catcast.tv/content/34246/index.m3u8
+#EXTINF:-1 group-title="INDIA-SERIES",INDIA-SERIES_INDIA-SERIES_INDIA-SERIES_Сити Эдем ТелеНовелла [Not 24/7]
+https://v2.catcast.tv/content/46209/index.m3u8
+#EXTINF:-1 group-title="OTHER-ENTERTAINMENT",OTHER-ENTERTAINMENT_OTHER-ENTERTAINMENT_OTHER-ENTERTAINMENT_ТВ-3
+https://livetv.mylifeisgood.net.ru/channels/tv3hd.m3u8
+#EXTINF:-1 group-title="OTHER-ENTERTAINMENT",OTHER-ENTERTAINMENT_OTHER-ENTERTAINMENT_OTHER-ENTERTAINMENT_ТНТ
+https://livetv.mylifeisgood.net.ru/channels/tnthd.m3u8
+#EXTINF:-1 group-title="OTHER-NEWS",OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_Al Araby TV (1080p)
 https://alarabyta.cdn.octivid.com/alaraby/smil:alaraby.stream.smil/chunklist.m3u8
-#EXTINF:-1 group-title="OTHER-NEWS",OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_Al Araby TV 2 (1080p)
+#EXTINF:-1 group-title="OTHER-NEWS",OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_OTHER-NEWS_Al Araby TV 2 (1080p)
 https://alarabyta.cdn.octivid.com/alaraby2n/smil:alaraby2n.stream.smil/chunklist.m3u8
-#EXTINF:-1 group-title="OTHER-SPORT",OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_World Poker Tour (1080p) [Not 24/7]
+#EXTINF:-1 group-title="OTHER-SPORT",OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_OTHER-SPORT_World Poker Tour (1080p) [Not 24/7]
 https://d3w4n3hhseniak.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/WPT-SportsTribal/120.m3u8
 #EXTINF:-1 group-title="OTHER-NEWS",OTHER-NEWS_Al Araby TV (1080p)
 https://alarabyta.cdn.octivid.com/alaraby/smil:alaraby.stream.smil/chunklist.m3u8
